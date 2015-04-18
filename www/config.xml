@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "DiceMaster"  version = "0.0.5">
+    <name>Dice Master</name>
+
+    <description>
+      A dice game using phone gap
+    </description>
+
+    <author href="http://www.mohawkcollege.ca" email="williamTaylor-Holubeshen@mohawkcollege.ca">
+       William Taylor-Holubeshen - Lab 6 - Dice Master
+    </author>
+
+    <gap:platform name="android" /> 
+<gap:plugin name="org.apache.cordova.device-motion" />
+<gap:plugin name="org.apache.cordova.device-orientation" />
+
+    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+	<preference name="android-installLocation" value="auto" />
+	<preference name="splash-screen-duration" value="1000"/>
+
+     
+</widget>

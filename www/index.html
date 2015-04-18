@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- I William Taylor-Holubeshen, 000305063 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. -->
+
+<html>
+  <head>
+    <title>Dice Master - William Taylor-Holubeshen</title>
+    <meta name="viewport" content="width=device-width">
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  
+	<style>
+		body {background-color: #AAA; color:#C90}
+		div#container {width:300px;text-align:center;margin:auto}
+		canvas {border:1px dotted yellow; margin-top: 50px; }
+		p#results {text-align:left}
+		table {  margin:  10px auto 25px auto}
+		table td {border: 1px solid #AAA; padding: 4px}
+		div#accelerometer{display:none;}
+		div#canvas {width: 200px; height: 200px; margin: auto; }
+		.container {margin-top:25px;}
+		#start{height:50px;}
+		h1{font-size:50px;}
+	</style>
+  
+  	<script src="phonegap.js"></script>
+    <script src='apis/jquery.js'></script>
+	<script src='apis/bootstrap.js'></script>
+  
+  </head>
+  <body>
+  
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container"></div>
+	</nav>
+  
+  <div id='container'>
+   <h1>Dice Master</h1>
+   
+   <div class="btn-group btn-group-justified" role="group" aria-label="...">
+		<div class="btn-group" role="group">
+			<button type="button" id="start" class="btn btn-default">Start Game</button>
+		</div>
+		
+	</div>
+   
+    <div id="accelerometer">
+        <table>
+        <tr><td>Acceleration X:</td><td id='x'></td></tr>
+        <tr><td>Acceleration Y:</td><td id='y'></td></tr>
+        <tr><td>Acceleration Z:</td><td id='z'></td></tr>
+        <tr><td>Reading Count:</td><td id='t'></td></tr>
+        </table>
+    </div>
+     
+	
+<div class="container">	
+
+	<div class="row">
+		<div class="col-xs-6 col-md-3">
+			<a href="#" class="thumbnail dice">
+				
+			</a>
+		</div>
+		<div class="col-xs-6 col-md-3">
+			<a href="#" class="thumbnail dice">
+				
+			</a>
+		</div>
+	</div>
+	
+</div>
+
+
+<h1 id="status"></h1>
+    
+   </div>
+  
+  <script src='apis/main.js'></script>
+  </body>
+</html>
